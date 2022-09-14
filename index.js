@@ -23,9 +23,7 @@ const renderSearchDeck = (cardData) => {
   const cardHTML = createCardHTML("s", cardId, cardImageUrl);
   cardHTML.classList.add("search-deck-card");
   cardHTML.addEventListener("click", () => {
-    // console.log(cardHTML);
-    // console.log(cardData);
-    addCardToPlayerDeck(cardHTML);
+    addCardToPlayerDeck(cardData);
   });
   searchDeck.append(cardHTML);
 };
@@ -43,24 +41,23 @@ function createCardHTML(searchDeckOrPlayerDeck, id, url) {
 }
 
 // PLAYER DECK RENDER
-function addCardToPlayerDeck(cardHTML) {
-  // console.log(cardHTML);
-  let playerCard = cardHTML.cloneNode(true);
-  let newId = extractIdFromClass(cardHTML.className).replace("s", "p");
-  playerCard.className = `card ${newId} player-deck-card`;
+function addCardToPlayerDeck(cardData) {
+  const playerCardId = cardData.id;
+  const playercardImageUrl = cardData.card_images[0].image_url_small;
+  let playerCard = createCardHTML('p', playerCardId, playercardImageUrl)
+  let newId = extractIdFromClass(playerCard.className)
+  playerCard.classList.add("player-deck-card");
   if (
     document.getElementsByClassName(newId).length < 3 &&
     document.getElementsByClassName("player-deck-card").length <= 60
   ) {
     playerCard.addEventListener("click", () => {
-      console.log(playerCard)
       playerCard.remove();
-    })
+    });
     playerDeck.appendChild(playerCard);
   } else {
-    console.log(`card ${newId} already exists 3 times in deck`);
+    console.log(`card ${newId} already exists 3 times in deck or deck is full`);
   }
-
 }
 
 function extractIdFromClass(classStr) {
