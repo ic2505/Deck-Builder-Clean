@@ -1,0 +1,37 @@
+{
+    "deck1": [
+      {
+        "id": "m75220074",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/75220074.jpg",
+        "count": 2
+      },
+      {
+        "id": "m9753964",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/9753964.jpg",
+        "count": 2
+      },
+      {
+        "id": "m36857073",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/36857073.jpg",
+        "count": 2
+      },
+      {
+        "id": "m62242678",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/62242678.jpg",
+        "count": 1
+      }
+    ],
+    "deck2": [
+      {
+        "id": "75220074",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/75220074.jpg",
+        "count": 1
+      },
+      {
+        "id": "15464375",
+        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/15464375.jpg",
+        "count": 1
+      }
+    ],
+    "deck3": []
+  }

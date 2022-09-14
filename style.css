@@ -1,0 +1,50 @@
+#search-deck {
+    background-color: #ffbb5a;
+    height: 20em;
+    overflow-y: scroll;
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  
+  #player-deck {
+    background-color: #7d50b9;
+    height: 20em;
+    overflow-y: scroll;
+  }
+  
+  #test-deck {
+    background-color: green;
+  }
+  
+  .card {
+    /* border: 2px solid #555; */
+    /* padding: 1em 2em 4em 4em; */
+  }
+  
+  #cards-search {
+    float: right;
+  }
+  .test {
+    min-height: 6rem;
+    width: 80%;
+    border: 3px solid black;
+  }
+  
+  .card-image {
+    /* padding: 10px; */
+    transition: transform 0.15s; /* Animation */
+    width: 10em;
+    /* margin: 0 auto; */
+  }
+  
+  .card-image:hover {
+    transform: scale(
+      1.1
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+  .card-image:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+  }
+  
