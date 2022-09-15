@@ -1,37 +1,322 @@
 {
-    "deck1": [
-      {
-        "id": "m75220074",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/75220074.jpg",
-        "count": 2
-      },
-      {
-        "id": "m9753964",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/9753964.jpg",
-        "count": 2
-      },
-      {
-        "id": "m36857073",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/36857073.jpg",
-        "count": 2
-      },
-      {
-        "id": "m62242678",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/62242678.jpg",
-        "count": 1
-      }
-    ],
-    "deck2": [
-      {
-        "id": "75220074",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/75220074.jpg",
-        "count": 1
-      },
-      {
-        "id": "15464375",
-        "image": "https://storage.googleapis.com/ygoprodeck.com/pics_small/15464375.jpg",
-        "count": 1
-      }
-    ],
-    "deck3": []
-  }
+  "deck1": [
+    {
+      "id": 75220074,
+      "name": "Armed Dragon, the Armored Dragon",
+      "type": "Effect Monster",
+      "desc": "When this card destroys an opponent's monster by battle: You can Special Summon 1 Level 5 or lower WIND Dragon monster from your hand or Deck, except \"Armed Dragon, the Armored Dragon\", but it cannot attack directly this turn.",
+      "atk": 1900,
+      "def": 1400,
+      "level": 4,
+      "race": "Dragon",
+      "attribute": "WIND",
+      "archetype": "Armed Dragon",
+      "card_sets": [
+        {
+          "set_name": "Hidden Arsenal: Chapter 1",
+          "set_code": "HAC1-EN173",
+          "set_rarity": "Secret Rare",
+          "set_rarity_code": "(ScR)",
+          "set_price": "4.21"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 75220074,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/75220074.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/75220074.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.93",
+          "tcgplayer_price": "1.00",
+          "ebay_price": "1.99",
+          "amazon_price": "5.69",
+          "coolstuffinc_price": "1.99"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 58827995,
+      "name": "Armor Dragon Ritual",
+      "type": "Spell Card",
+      "desc": "This card is used to Ritual Summon \"Knight of Armor Dragon\". You must also Tribute monsters from your hand or field whose total Levels equal 4 or more. During your Main Phase, except the turn this card was sent to the GY: You can banish monsters from your hand or face-up field whose total Levels equal 4 or more; banish this card from your GY, and if you do, Special Summon 1 \"Knight of Armor Dragon\" from your GY. You can only use this effect of \"Armor Dragon Ritual\" once per turn.",
+      "race": "Ritual",
+      "card_sets": [
+        {
+          "set_name": "Blazing Vortex",
+          "set_code": "BLVO-EN064",
+          "set_rarity": "Common",
+          "set_rarity_code": "(C)",
+          "set_price": "0.91"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 58827995,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/58827995.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/58827995.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.05",
+          "tcgplayer_price": "0.09",
+          "ebay_price": "1.95",
+          "amazon_price": "0.59",
+          "coolstuffinc_price": "0.49"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 62242678,
+      "name": "Hot Red Dragon Archfiend King Calamity",
+      "type": "Synchro Monster",
+      "desc": "2 Tuners + 1 non-Tuner DARK Dragon Synchro Monster\r\nWhen this card is Synchro Summoned: You can activate this effect; for the rest of this turn, your opponent cannot activate cards, also cards your opponent controls cannot activate their effects. Your opponent cannot activate cards or effects in response to this effect's activation. If this card destroys a monster by battle: Inflict damage to your opponent equal to that monster's original ATK. If this card in its owner's possession is destroyed by an opponent's card: You can target 1 Level 8 or lower DARK Dragon Synchro Monster in your GY; Special Summon it.",
+      "atk": 4000,
+      "def": 3500,
+      "level": 12,
+      "race": "Dragon",
+      "attribute": "DARK",
+      "archetype": "Archfiend",
+      "card_sets": [
+        {
+          "set_name": "Duel Power",
+          "set_code": "DUPO-EN059",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "2.82"
+        },
+        {
+          "set_name": "Maximum Gold: El Dorado",
+          "set_code": "MGED-EN070",
+          "set_rarity": "Rare",
+          "set_rarity_code": "(R)",
+          "set_price": "1.48"
+        },
+        {
+          "set_name": "Shining Victories",
+          "set_code": "SHVI-EN097",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "3.8"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 62242678,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/62242678.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/62242678.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.18",
+          "tcgplayer_price": "0.23",
+          "ebay_price": "0.99",
+          "amazon_price": "1.97",
+          "coolstuffinc_price": "3.99"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 9753964,
+      "name": "Hot Red Dragon Archfiend Abyss",
+      "type": "Synchro Monster",
+      "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\n(Quick Effect): You can target 1 face-up card your opponent controls; negate its effects until the end of this turn. When this card inflicts battle damage to your opponent: You can target 1 Tuner in your GY; Special Summon it in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Abyss\" once per turn.",
+      "atk": 3200,
+      "def": 2500,
+      "level": 9,
+      "race": "Dragon",
+      "attribute": "DARK",
+      "archetype": "Archfiend",
+      "card_sets": [
+        {
+          "set_name": "Duel Power",
+          "set_code": "DUPO-EN057",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "3.35"
+        },
+        {
+          "set_name": "High-Speed Riders",
+          "set_code": "HSRD-EN041",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "11.03"
+        },
+        {
+          "set_name": "Maximum Gold: El Dorado",
+          "set_code": "MGED-EN068",
+          "set_rarity": "Rare",
+          "set_rarity_code": "(R)",
+          "set_price": "1.11"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 9753964,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/9753964.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/9753964.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.29",
+          "tcgplayer_price": "0.30",
+          "ebay_price": "0.99",
+          "amazon_price": "1.63",
+          "coolstuffinc_price": "0.79"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 36857073,
+      "name": "Hot Red Dragon Archfiend Bane",
+      "type": "Synchro Monster",
+      "desc": "1 Tuner + 1 non-Tuner DARK Dragon Synchro Monster\nYou can Tribute 1 monster, then target 1 \"Red Dragon Archfiend\" monster in your GY; Special Summon it. When this card inflicts battle damage to your opponent: You can Special Summon 2 Tuners with the same Level (1 from your Deck and 1 from your GY) in Defense Position. You can only use each effect of \"Hot Red Dragon Archfiend Bane\" once per turn.",
+      "atk": 3500,
+      "def": 3000,
+      "level": 10,
+      "race": "Dragon",
+      "attribute": "DARK",
+      "archetype": "Archfiend",
+      "card_sets": [
+        {
+          "set_name": "Duel Power",
+          "set_code": "DUPO-EN058",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "1.88"
+        },
+        {
+          "set_name": "High-Speed Riders",
+          "set_code": "HSRD-EN042",
+          "set_rarity": "Secret Rare",
+          "set_rarity_code": "(ScR)",
+          "set_price": "5.75"
+        },
+        {
+          "set_name": "Maximum Gold: El Dorado",
+          "set_code": "MGED-EN069",
+          "set_rarity": "Rare",
+          "set_rarity_code": "(R)",
+          "set_price": "1.32"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 36857073,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/36857073.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/36857073.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.15",
+          "tcgplayer_price": "0.18",
+          "ebay_price": "0.99",
+          "amazon_price": "0.57",
+          "coolstuffinc_price": "0.99"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 39765958,
+      "name": "Hot Red Dragon Archfiend",
+      "type": "Synchro Monster",
+      "desc": "1 Tuner + 1 or more non-Tuner monsters\nOnce per turn, during your Main Phase 1: You can destroy all other face-up Attack Position monsters on the field. Monsters other than this card cannot attack the turn you activate this effect.",
+      "atk": 3000,
+      "def": 2000,
+      "level": 8,
+      "race": "Dragon",
+      "attribute": "DARK",
+      "archetype": "Archfiend",
+      "card_sets": [
+        {
+          "set_name": "High-Speed Riders",
+          "set_code": "HSRD-EN040",
+          "set_rarity": "Super Rare",
+          "set_rarity_code": "(SR)",
+          "set_price": "3.64"
+        },
+        {
+          "set_name": "Maximum Gold: El Dorado",
+          "set_code": "MGED-EN067",
+          "set_rarity": "Rare",
+          "set_rarity_code": "(R)",
+          "set_price": "1.32"
+        },
+        {
+          "set_name": "Yu-Gi-Oh! 5D's Volume 6 promotional card",
+          "set_code": "YF06-EN001",
+          "set_rarity": "Ultra Rare",
+          "set_rarity_code": "(UR)",
+          "set_price": "5.83"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 39765958,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/39765958.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/39765958.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "0.16",
+          "tcgplayer_price": "0.15",
+          "ebay_price": "0.99",
+          "amazon_price": "0.42",
+          "coolstuffinc_price": "7.99"
+        }
+      ],
+      "count": 1
+    },
+    {
+      "id": 90788081,
+      "name": "Hundred Dragon",
+      "type": "Effect Monster",
+      "desc": "Once per turn: You can have this card gain Levels equal to the number of cards you control, and if you do, it gains 100 ATK for each Level gained. These changes last until the end of this turn. If this card is sent to the GY: You can target 1 face-up monster you control that was Special Summoned from the Extra Deck; the first time that face-up monster would be destroyed by battle or card effect, it is not destroyed. You can only use this effect of \"Hundred Dragon\" once per turn.",
+      "atk": 1800,
+      "def": 1000,
+      "level": 4,
+      "race": "Dragon",
+      "attribute": "WIND",
+      "card_sets": [
+        {
+          "set_name": "Dragons of Legend: The Complete Series",
+          "set_code": "DLCS-EN146",
+          "set_rarity": "Secret Rare",
+          "set_rarity_code": "(ScR)",
+          "set_price": "8.11"
+        }
+      ],
+      "card_images": [
+        {
+          "id": 90788081,
+          "image_url": "https://storage.googleapis.com/ygoprodeck.com/pics/90788081.jpg",
+          "image_url_small": "https://storage.googleapis.com/ygoprodeck.com/pics_small/90788081.jpg"
+        }
+      ],
+      "card_prices": [
+        {
+          "cardmarket_price": "1.03",
+          "tcgplayer_price": "1.66",
+          "ebay_price": "4.95",
+          "amazon_price": "0.99",
+          "coolstuffinc_price": "0.99"
+        }
+      ],
+      "count": 1
+    }
+  ],
+  "deck2": [],
+  "deck3": []
+}

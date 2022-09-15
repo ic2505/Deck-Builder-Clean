@@ -44,17 +44,19 @@ function createCardHTML(searchDeckOrPlayerDeck, id, url) {
 function addCardToPlayerDeck(cardData) {
   const playerCardId = cardData.id;
   const playercardImageUrl = cardData.card_images[0].image_url_small;
-  let playerCard = createCardHTML('p', playerCardId, playercardImageUrl)
-  let newId = extractIdFromClass(playerCard.className)
+  let playerCard = createCardHTML("p", playerCardId, playercardImageUrl);
+  let newId = extractIdFromClass(playerCard.className);
   playerCard.classList.add("player-deck-card");
   if (
     document.getElementsByClassName(newId).length < 3 &&
-    document.getElementsByClassName("player-deck-card").length <= 60
+    document.getElementsByClassName("player-deck-card").length < 60
   ) {
     playerCard.addEventListener("click", () => {
       playerCard.remove();
+      // remove from database
     });
     playerDeck.appendChild(playerCard);
+    // add to database
   } else {
     console.log(`card ${newId} already exists 3 times in deck or deck is full`);
   }
@@ -78,6 +80,10 @@ const clearList = (parent) => {
 document.querySelector("#cards-search").addEventListener("submit", (event) => {
   event.preventDefault();
   clearList(searchDeck);
-  fetchCards(event.target.querySelector("#search-bar").value);
+  if (event.target.querySelector("#search-bar").value.length > 0) {
+    fetchCards(event.target.querySelector("#search-bar").value);
+  }
   document.querySelector("#cards-search").reset();
 });
+
+// add mouseover event to display information on card
