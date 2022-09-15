@@ -123,4 +123,9 @@
   position: sticky;
   top: 0;
   padding: 20px;
+  border-radius: 10px;
+}
+
+.description-container {
+  font-size: small;
 }
