@@ -12,10 +12,13 @@
 }
 
 .card {
-  width: 70px;
-  border: 3px solid #555;
-  display: inline;
+  background-color: black;
+  width: 108px;
+  /* border: 3px solid #555; */
+  display: inline-block;
   position: relative;
+  padding: 5px;
+  margin: 2px;
 }
 
 .card-image {
@@ -112,4 +115,12 @@
 .card-info-image {
   transition: transform 0.15s;
   width: 15em;
+}
+
+.card-info-popup {
+  width: 300px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 20px;
 }

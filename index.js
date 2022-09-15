@@ -27,14 +27,16 @@ const renderSearchDeck = (cardData) => {
     addCardToPlayerDeck(cardData);
   });
 
-  cardHTML.addEventListener("mouseover", () => {
+  cardHTML.querySelector("img").addEventListener("mouseover", () => {
     const cardInfoHTML = createCardHTML(
       "c",
       cardData.id,
       cardData.card_images[0].image_url
     );
     cardInfoHTML.querySelector("img").classList.add("card-info-image");
-    cardInfo.append(cardInfoHTML);
+    const infoPopup = document.createElement("div");
+    infoPopup.classList.add("card-info-popup");
+    infoPopup.append(cardInfoHTML);
     const infoContainer = document.createElement("div");
     infoContainer.classList.add("information-container");
     const descContainer = document.createElement("div");
@@ -42,10 +44,11 @@ const renderSearchDeck = (cardData) => {
     descContainer.textContent = cardData.desc;
 
     infoContainer.append(descContainer);
-    cardInfo.append(infoContainer);
+    infoPopup.append(infoContainer);
+    cardInfo.append(infoPopup);
   });
 
-  cardHTML.addEventListener("mouseleave", () => {
+  cardHTML.querySelector("img").addEventListener("mouseleave", () => {
     clearList(cardInfo);
   });
 
