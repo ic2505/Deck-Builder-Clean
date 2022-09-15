@@ -1,6 +1,7 @@
 const searchBar = document.getElementById("search-bar");
 const searchDeck = document.getElementById("search-deck");
 const playerDeck = document.getElementById("player-deck");
+const cardInfo = document.getElementById("card-info");
 
 let selectDeck = "deck1";
 
@@ -25,6 +26,29 @@ const renderSearchDeck = (cardData) => {
   cardHTML.addEventListener("click", () => {
     addCardToPlayerDeck(cardData);
   });
+
+  cardHTML.addEventListener("mouseover", () => {
+    const cardInfoHTML = createCardHTML(
+      "c",
+      cardData.id,
+      cardData.card_images[0].image_url
+    );
+    cardInfoHTML.querySelector("img").classList.add("card-info-image");
+    cardInfo.append(cardInfoHTML);
+    const infoContainer = document.createElement("div");
+    infoContainer.classList.add("information-container");
+    const descContainer = document.createElement("div");
+    descContainer.classList.add("description-container");
+    descContainer.textContent = cardData.desc;
+
+    infoContainer.append(descContainer);
+    cardInfo.append(infoContainer);
+  });
+
+  cardHTML.addEventListener("mouseleave", () => {
+    clearList(cardInfo);
+  });
+
   searchDeck.append(cardHTML);
 };
 
@@ -77,13 +101,14 @@ const clearList = (parent) => {
   }
 };
 
-document.querySelector("#cards-search").addEventListener("submit", (event) => {
+document.querySelector(".searchbar").addEventListener("submit", (event) => {
   event.preventDefault();
   clearList(searchDeck);
-  if (event.target.querySelector("#search-bar").value.length > 0) {
-    fetchCards(event.target.querySelector("#search-bar").value);
+  console.log(event.target.querySelector(".search_input").value);
+  if (event.target.querySelector(".search_input").value.length > 0) {
+    fetchCards(event.target.querySelector(".search_input").value);
   }
-  document.querySelector("#cards-search").reset();
+  document.querySelector(".searchbar").reset();
 });
 
 // add mouseover event to display information on card

@@ -1,26 +1,14 @@
-.parent {
-  display: grid;
-  grid-template-columns: 0.1fr 1fr;
-  grid-template-rows: 0.1fr 0.2fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+.test-container {
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
 }
 
-.div1 {
-  grid-area: 1 / 1 / 6 / 2;
-  border: 3px solid #555;
-}
-.div2 {
-  grid-area: 1 / 2 / 2 / 6;
-  border: 3px solid #555;
-}
-.div3 {
-  grid-area: 2 / 2 / 3 / 6;
-  border: 3px solid #555;
-}
-.div4 {
-  grid-area: 3 / 2 / 6 / 6;
-  border: 3px solid #555;
+#main_deck {
+  overflow-y: hidden;
 }
 
 .card {
@@ -36,13 +24,92 @@
 }
 
 .card-image:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1);
 }
 
 .card-image:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(1px);
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 900px;
+  overflow: hidden;
+  min-height: 0px !important;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: #090446;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: red;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: white;
+  color: #e74c3c;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.testbox {
+  min-height: 20px !important;
+  text-align: center !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+.row {
+  margin-bottom: 10px;
+  border: 8px solid #d1d1d1;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: "Bungee Spice", cursive;
+}
+
+.card-info-image {
+  transition: transform 0.15s;
+  width: 15em;
 }
