@@ -112,7 +112,7 @@ const clearList = (parent) => {
 document.querySelector(".searchbar").addEventListener("submit", (event) => {
   event.preventDefault();
   clearList(searchDeck);
-  console.log(event.target.querySelector(".search_input").value);
+  // console.log(event.target.querySelector(".search_input").value);
   if (event.target.querySelector(".search_input").value.length > 0) {
     fetchCards(event.target.querySelector(".search_input").value);
   }
