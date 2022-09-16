@@ -172,7 +172,7 @@ body {
 
 #yugi {
   height: 150px;
-  animation: first_color 2.5s ease-in-out infinite alternate;
+  animation: second_color 2.5s ease-in-out infinite alternate;
   /* filter: drop-shadow(0 0 10px #ff1177); */
 }
 
@@ -190,6 +190,15 @@ body {
   }
   100% {
     filter: drop-shadow(0 0 20px #ff1177);
+  }
+}
+
+@keyframes second_color {
+  0% {
+    filter: drop-shadow(0 0 8px #f5c55b);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #f5c55b);
   }
 }
 
