@@ -149,7 +149,8 @@ body {
 .section-labels .label {
   font-size: 40px;
   font-family: "Nabla", cursive;
-  text-shadow: 3px 3px 4px #000000;
+  /* text-shadow: 3px 3px 4px #000000; */
+
   width: 200px;
   /* border: 2px solid #d1d1d1; */
   text-align: center;
@@ -162,12 +163,37 @@ body {
 
 #yugi {
   height: 150px;
+  animation: first_color 2.5s ease-in-out infinite alternate;
+  /* filter: drop-shadow(0 0 10px #ff1177); */
 }
 
 #yugiohCard {
   width: 60px;
   height: 80px;
   margin-top: 3em;
+  animation: first_color 1.5s ease-in-out infinite alternate,
+    floatY 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes first_color {
+  0% {
+    filter: drop-shadow(0 0 8px #ff1177);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #ff1177);
+  }
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0) rotate(-0.01turn);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0.01turn);
+  }
+  100% {
+    transform: translateY(0) rotate(-0.01turn);
+  }
 }
 
 .deck {
