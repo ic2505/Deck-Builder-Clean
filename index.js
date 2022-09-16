@@ -27,6 +27,12 @@ const renderSearchDeck = (cardData) => {
     addCardToPlayerDeck(cardData);
   });
 
+  renderCardInfo(cardHTML, cardData);
+
+  searchDeck.append(cardHTML);
+};
+
+function renderCardInfo(cardHTML, cardData) {
   cardHTML.querySelector("img").addEventListener("mouseover", () => {
     const cardInfoHTML = createCardHTML(
       "c",
@@ -51,9 +57,7 @@ const renderSearchDeck = (cardData) => {
   cardHTML.querySelector("img").addEventListener("mouseleave", () => {
     clearList(cardInfo);
   });
-
-  searchDeck.append(cardHTML);
-};
+}
 
 function createCardHTML(searchDeckOrPlayerDeck, id, url) {
   const card = document.createElement("a");
@@ -83,6 +87,7 @@ function addCardToPlayerDeck(cardData) {
       // remove from database
     });
     playerDeck.appendChild(playerCard);
+    renderCardInfo(playerCard, cardData);
     // add to database
   } else {
     console.log(`card ${newId} already exists 3 times in deck or deck is full`);
@@ -112,6 +117,16 @@ document.querySelector(".searchbar").addEventListener("submit", (event) => {
     fetchCards(event.target.querySelector(".search_input").value);
   }
   document.querySelector(".searchbar").reset();
+});
+
+const yugi = document.getElementById("yugi");
+let counter = 1;
+window.addEventListener("click", () => {
+  if (counter > 3) {
+    counter = 1;
+  }
+  yugi.src = `assets/yugi${counter}.png`;
+  counter = counter + 1;
 });
 
 // add mouseover event to display information on card

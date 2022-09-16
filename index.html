@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Deck Profiler</title>
+    <title>Deck Builder</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/683/683774.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -40,7 +38,7 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg" style="background-color: #090446">
+    <nav class="navbar navbar-expand-lg" style="background-color: #0A1930">
       <a class="navbar-brand" href="#">Deck Builder</a>
       <button
         class="navbar-toggler"
@@ -54,9 +52,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto mx-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link enabled" href="#" style="color: #786f52">HOME</a>
+            <a class="nav-link enabled" href="#" >HOME</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -67,7 +65,6 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style="color: #786f52"
             >
               TCG
             </a>
@@ -86,7 +83,6 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              style="color: #786f52"
             >
               Github
             </a>
@@ -102,10 +98,9 @@
         </ul>
       </div>
     </nav>
-    <h2>Welcome to the Universal Deck Builder</h2>
     <div class="testbox"></div>
     <div class="container-fluid">
-      <div class="d-flex justify-content-center h-100">
+      <div id="character-container" class="d-flex h-100">
         <form class="searchbar">
           <input
             class="search_input"
@@ -120,33 +115,30 @@
             </i>
           </a>
         </form>
+        <img id="yugi" src="assets/yugi1.png"></img>
+        <img id="yugiohCard" src="assets/yugiohCard.png"></img>
       </div>
-      <!-- <form class="form-inline my-2 my-lg-0" id="cards-search">
-            <input class="form-control mr-sm-2" type="search" id="cardname" placeholder="Search Card" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+      <div class="section-labels">
+        <div class="label">Search</div>
+        <div class="label">Deck</div>
+        <div class="label">Card-Info</div>
+      </div>
       <div class="row">
         <div
           id="search-deck"
-          class="col p-4 text-white"
-          style="background-color: #f0544f"
-        >
-          Result:
-        </div>
+          class="deck col p-4 text-white"
+          style="background-color: #67b3e4"
+        ></div>
         <div
           id="player-deck"
-          class="col p-4 text-white"
-          style="background-color: #d81e5b"
-        >
-          Main Deck:
-        </div>
+          class="deck col p-4 text-white"
+          style="background-color: #c292de"
+        ></div>
         <div
           id="card-info"
-          class="col p-4 text-white"
-          style="background-color: #feb95f"
-        >
-          Card Info:
-        </div>
+          class="deck col p-4 text-white"
+          style="background-color: #95a3e0"
+        ></div>
       </div>
     </div>
   </body>
