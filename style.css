@@ -233,3 +233,21 @@ body {
   font-size: 7px;
   color: black;
 }
+
+#search-deck {
+  background-color: #67b2e4;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#player-deck {
+  background-color: #c292de;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#card-info {
+  background-color: #95a3e0;
+  border: 0px;
+  border-radius: 10px;
+}
